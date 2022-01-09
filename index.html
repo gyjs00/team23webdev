@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<title>Tune In!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-black">
+    <h1 class="w3-xxxlarge"><b>TUNE IN!</b></h1>
+    <h6>REVIEWING MUSIC'S NEWEST <span class="w3-tag w3-white"> ARTISTS</span></h6>
+
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="images/listening.jpeg" alt="Fashion Blog" width="800" height="800">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white"></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>DISCOVER THE LATEST HITS</b></h1> 
+      
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border w3-border-black ">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+           <div class="w3-center">
+           <img class="w3-image w3-black" src="images/always.jpeg" alt="Keshi" width="400" height="400">
+  
+          <h2>Keshi: Main Character Energy</h2>
+          <h5>Album: always</h5>
+          <h5>Song: drunk</h5>
+         <h6>by Vanessa Leung</h6>
+          <h6><span class="w3-opacity">Jan 8, 2022</span></h6>
+          
+        </div>
+
+        <div class="w3-justify">
+          <p> Keshi’s song “drunk” is an embodiment of the first year uni experience — everyone’s drunk, you just want to go to bed, and at the end of the day you’re just freaking lonely. It’s the song to listen to when you’re experiencing FOMO, manifesting your “main character energy” at a hipster café, or literally when all your friends are drunk again. Keshi’s signature “lo-fi” sound gets us “in our feels” with his smooth vocals and laissez-faire style of singing.
+        
+          </p>
+
+          
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+      
+              <div class="w3-col l10 m9">
+                <h4> Jill <span class="w3-opacity w3-medium">January 08, 2021, 6:32 PM</span></h4>
+                <p>I love Keshi!</p>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+           <div class="w3-center">
+           <img class="w3-image w3-white" src="images/Soulja.jpeg" alt="Soulja" width="400" height="400">
+  
+          <h2>Soulja Boy: STAN.</h2>
+          <h5>Album: iSouljaBoyTellem</h5>
+          <h5>Song:  Kiss Me Thru The Phone</h5>
+          <h6>by Grace Suh</h6>
+          <h6><span class="w3-opacity">Jan 8, 2022</span></h6>
+          
+        </div>
+
+        <div class="w3-justify">
+          <p>Before Soulja's claim to fame as the SouljaGame console mogul, he was a key definer of the mid to late 2000s music zeitgeist. Despite his slightly delayed — even off-beating rapping at times — and simplistic wordplay, his infectious and boisterous confidence radiates from each song and compensates for any deficiencies in the lyrical department. Kiss Me Thru The Phone enraptures and sends the listener back to a time of flip phones and true religion jeans. With the genius addition of Sammi to sing the iconic chrous and line of "six seven eight triple nine eight two one two", Kiss Me Thru The Phone appeals to the universal sensation of youth and has stood the test of time.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+             
+              
+              <div class="w3-col l10 m9">
+                <h4>Bobby <span class="w3-opacity w3-medium">January 08, 2021, 10:52 PM</span></h4>
+                <p>I too, am a Soulja fan!! Loved Turn My Swag On!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+             
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">January 08, 2021, 9:12 PM</span></h4>
+                <p>omg! Souljaboy takes me back to my highschool days :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+     <div class="w3-container w3-white w3-margin w3-padding-large">
+           <div class="w3-center">
+           <img class="w3-image w3-black" src="images/dua.jpeg" alt="dua" width="400" height="400">
+  
+          <h2>Dua Lipa: Main Character Energy</h2>
+          <h5>Album: Future Nostalgia</h5>
+          <h5>Song: Love Again</h5>
+          <h6>by Saryu Rawaley</h6>
+          <h6><span class="w3-opacity">Jan 8, 2022</span></h6>
+          
+        </div>
+
+        <div class="w3-justify">
+          <p>British Pop Icon Dua Lipa won Pop vocal album of the year at the last Grammys.Her album Future Nostalgia is pop-funk with disco and electronic influences to pay homage to the iconic 80’s and 90’s pop culture scene. This no skip album made huge waves across popular social media services like Tiktok, as the catchy beats and lyrics made everyone in their feels. Popular song Love Again is the perfect hit  for a party playlist or just to jam out to on your own. The song Love again has done tremendously well on the billboard charts and Dua’s tone and artistry really shines through. A music video was made for this song which featured Dua in an interesting “cowboy chic” sort of look, which definitely was a main character moment. 
+          </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+              
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Jane <span class="w3-opacity w3-medium">January 08, 2021, 7:22 PM</span></h4>
+                <p>Dua Lipa more like Dula Peep haha</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>John <span class="w3-opacity w3-medium">January 08, 2021, 10:32 PM</span></h4>
+                <p>Loved your review on Future Nostalgia, it's spot on and definitely appeals to a wide audience.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">January 08, 2021, 9:12 PM</span></h4>
+                <p>So many SOTYs on this album Dua Lipa does it again!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-black w3-margin">
+        <div class="w3-display-right w3-padding-large">
+      <h4 class="w3-text-white"></h4>
+      <h4 class="w3-jumbo w3-text-white w3-hide-small"><b>A BLOG FOR MUSIC LOVERS</b></h4> </div>
+
+      <br>
+        <div class="w3-container w3-black">
+          <h4>ABOUT</h4>
+          <h6> <strong>Tune In! </strong> is the hottest new blog out there for audiophiles. It has the coolest music reviews that are catered to today's listeners! Created by Vanessa Leung, Grace Suh and Saryu Rawaley. </h6>
+        </div>
+      </div>
+     
+
+      <!-- Posts -->
+      <div class="w3-black w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>RANKINGS</h4>
+        </div>
+        <div class="w3-container w3-black">
+          <div class="w3-container w3-display-container w3-black w3-section" style="height:350px">
+            <span class="w3-display-middle"></span>
+            <img src= "/images/rankings.png" width="120%"> 
+
+
+        
+      </div>
+      <br>
+     
+
+<br>
+<br>
+<br>
+      <!-- Advertising -->
+        <div class="w3-container w3-padding w3-black">
+          <h4>OUR CURATED PLAYLIST</h4>
+        </div>
+        <div class="w3-container w3-BLACK">
+          <div class="w3-container w3-display-container w3-BLACK w3-section" style="height:400px">
+            <span class="w3-display-middle"></span><iframe src="https://open.spotify.com/embed/playlist/6pc9UbM16E12c3VK7T1wEC?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+      </div>
+     
+      
+
+      <!-- Inspiration -->
+      <div class="w3-BLACK w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>POPULAR ARTISTS</h4>
+        </div>
+        <div class="w3-row-padding w3-BLACK">
+          <div class="w3-col s6">
+            <p><img src="/images/theweeknd.png" alt="Jeans" style="width:100%"></p>
+            <p><img src="/images/ariana.jpeg" alt="Jeans" style="width:100%"></p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="/images/dojacat.jpeg" alt="Men in Hats" style="width:100%"</p>
+            <p><img src="/images/dominic.jpeg" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>GENIUS LYRICS</h4>
+        </div>
+        <div class="w3-container w3-black">
+          <div class="w3-container w3-display-container w3-black w3-section" style="height:200px">
+            <span class="w3-display-middle"></span>
+            <img src= "http://assets.genius.com/images/sharing_fallback.png?1641493642" width=50%; height=175 /> <br>
+           <h6>Click <a href="https://genius.com"> HERE </a> to access lyrics to all your favourite songs </h6>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-BLACK w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>SOCIALS</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+     
+      
+      
+      <!-- Subscribe -->
+      <div class="w3-BLACK w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>SUBSCRIBE</h4>
+        </div>
+        <div class="w3-container w3-BLACK">
+          <h6>Join our email list to be the first to be notified about the latest blog posts! </h6>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-black"></button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+ <div class="w3-container w3-center w3-black">
+   <br>
+
+    <h2 class="w3-wide">OUR ARTIST OF THE YEAR</h2>
+      <iframe width="355" height="315" src="https://www.youtube.com/embed/EkOc6wCKx68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div> 
+<br>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-black" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p> Copyright Tune In! 2022 </p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
